@@ -15,7 +15,7 @@ deps: ## Install Python Dependencies
 	@pip install -r requirements.txt
 
 dev: ## Runs ulauncher on development mode
-	ulauncher -v --dev --no-extensions  |& grep "${EXT_NAME}"
+	ulauncher -v --dev --no-extensions | grep "${EXT_NAME}"
 
 start: ## Starts extension backend for development
 ifeq ($(shell echo ${PORT} | egrep "${PORT_REGEX}"),)
