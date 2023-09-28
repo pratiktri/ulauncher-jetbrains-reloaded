@@ -30,7 +30,8 @@ class JetbrainsLauncherExtension(Extension):
                            launcher_prefixes=["pycharm", "charm"]),
         "rider": IdeData(name="Rider", config_prefix="Rider", launcher_prefixes=["rider"]),
         "webstorm": IdeData(name="WebStorm", config_prefix="WebStorm",
-                            launcher_prefixes=["webstorm"])
+                            launcher_prefixes=["webstorm"]),
+        "rust": IdeData(name="RustRover", config_prefix="RustRover", launcher_prefixes=["rust-rover"])
     }
 
     aliases: Dict[str, IdeKey] = {}
